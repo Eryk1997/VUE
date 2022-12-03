@@ -8,8 +8,8 @@ Vue.createApp({
 
   methods: {
     addDescription() {
-      this.descriptions.push(this.description)
-      this.description = ''
+      this.descriptions.push(this.description);
+      this.description = '';
     },
   },
 }).mount('#app')
