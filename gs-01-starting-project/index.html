@@ -9,9 +9,9 @@
   <body>
     <div id="app">
       <div>
-        <label for="goal">Goal</label>
-        <input type="text" id="goal" />
-        <button>Add Goal</button>
+        <label for="goal">Description</label>
+        <input type="text" id="goal" v-model="description" />
+        <button @click="addDescription">Add description</button>
       </div>
       <ul>
         <li v-for="description in descriptions">{{ description }}</li>
