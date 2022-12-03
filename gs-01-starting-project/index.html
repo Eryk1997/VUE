@@ -14,8 +14,10 @@
         <button>Add Goal</button>
       </div>
       <ul>
+        <li v-for="description in descriptions">{{ description }}</li>
       </ul>
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
