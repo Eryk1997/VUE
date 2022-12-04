@@ -3,6 +3,8 @@ const app = Vue.createApp({
     return {
       description: 'Example user goal text',
       linkVue: 'https://vuejs.org/',
+      goodJobMessage: 'Good job!',
+      badJobMessage: 'Bad job!',
     }
   },
 
@@ -19,10 +21,10 @@ const app = Vue.createApp({
 
     generateRandomTextByNumber(number) {
       if (number > 0.5) {
-        return 'Good job!'
+        return this.goodJobMessage
       }
 
-      return 'Bad job!'
+      return this.badJobMessage
     },
   },
 })
