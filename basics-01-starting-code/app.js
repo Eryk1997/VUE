@@ -5,6 +5,7 @@ const app = Vue.createApp({
       linkVue: 'https://vuejs.org/',
       goodJobMessage: 'Good job!',
       badJobMessage: 'Bad job!',
+      htmlContent: '<li>Example text with v-html</li>'
     }
   },
 
